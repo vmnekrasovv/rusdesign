@@ -70,18 +70,30 @@ body.lock {
 }
 
 .container {
-	max-width: calc(1200px + (var(--index) * 2));
+	max-width: calc(1420px + (var(--index) * 2));
 	margin: 0 auto;
 	padding: 0 var(--index);
 }
 
 .section {
 	padding: 100px 0;
+
+	@media (max-width: 576px) {
+		padding-top: 50px;
+	}
 }
 
 p {
 	line-height: 140%;
 	font-size: 22px;
+
+	@media (max-width: 768px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 17px;
+	}
 }
 
 a {
@@ -117,6 +129,14 @@ h1 {
 	margin-bottom: 40px;
 	background: rgb(255,164,98);
 	background: linear-gradient(90deg, rgba(255,164,98,1) 0%, rgba(180,83,80,1) 22%, rgba(138,38,69,1) 49%, rgba(41,23,37,1) 85%);
+
+	@media (max-width: 768px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 17px;
+	}
 }
 
 .text-gradient {
@@ -127,6 +147,15 @@ h1 {
 	font-size: 183px;
 	line-height: 138px;
 	font-weight: bold;
+	align-self: flex-start;
+
+	@media (max-width: 768px) {
+		font-size: 70px;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 50px;
+	}
 }
 
 @import 'header';
