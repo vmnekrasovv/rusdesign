@@ -18,7 +18,7 @@
 
 	--index: calc(1vw + 1vh);
 
-	--color-dark: #15181F;
+	--color-dark: #171422;
 
 } 
 
@@ -39,7 +39,7 @@ html, body {
 	height: 100%;
 	position: relative;
 	font-family: 'Gotham';
-	font-size: 22px;
+	font-size: 16px;
 }
 
 body.lock {
@@ -57,14 +57,26 @@ body.lock {
 }
 
 .section {
-	padding: 120px 0;
+	padding: 100px 0;
 }
 
 p {
 	line-height: 140%;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px transparent;
+	transition: .2s;
+
+	&:hover {
+		text-shadow: 1px 1px var(--color-dark);		
+	}
+}
+
 @import 'header';
 
-// @import 'burger';
+@import 'burger';
+
 // @import 'footer';
