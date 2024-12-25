@@ -1,0 +1,23 @@
+.s1 {
+
+	&-columns {
+		display: flex;
+		gap: 20px;
+	}
+
+	.about {
+		max-width: 1180px;
+
+		&-list {
+
+			&__item {
+
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				margin-bottom: 35px;
+
+			}
+		}
+	}
+}

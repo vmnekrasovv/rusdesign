@@ -8,8 +8,24 @@
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('../fonts/GothamPro.woff2') format('woff2');
+	src: url('../fonts/GothamPro-Medium.woff2') format('woff2');
 	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/GothamPro-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/GothamPro-Black.woff2') format('woff2');
+	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
 }
@@ -17,12 +33,14 @@
 :root {
 
 	--index: calc(1vw + 1vh);
-
 	--color-dark: #171422;
+	--color-raspberry: #9E0B37;
+	--color-raspberry-dark: #680422;
+	--color-gold: #FFC531;
 
 } 
 
-// @import 'scrollbar';
+@import 'scrollbar';
 
 *, *::before, *::after {
 	padding: 0;
@@ -40,6 +58,7 @@ html, body {
 	position: relative;
 	font-family: 'Gotham';
 	font-size: 16px;
+	color: #fff;
 }
 
 body.lock {
@@ -62,6 +81,7 @@ body.lock {
 
 p {
 	line-height: 140%;
+	font-size: 22px;
 }
 
 a {
@@ -85,8 +105,34 @@ h1 {
 	}
 }
 
+.page {
+	background: var(--color-dark);
+}
+
+.text-highlight {
+	padding: 45px 40px 55px;
+	border-radius: 30px;
+	text-shadow: 1px 1px var(--color-dark);
+	font-size: 22px;
+	margin-bottom: 40px;
+	background: rgb(255,164,98);
+	background: linear-gradient(90deg, rgba(255,164,98,1) 0%, rgba(180,83,80,1) 22%, rgba(138,38,69,1) 49%, rgba(41,23,37,1) 85%);
+}
+
+.text-gradient {
+	background: linear-gradient(to bottom, #8A2645 0%, #291725 67%, var(--color-dark) 99%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-size: 183px;
+	line-height: 138px;
+	font-weight: bold;
+}
+
 @import 'header';
 
 @import 'burger';
+
+@import 's1';
 
 // @import 'footer';
