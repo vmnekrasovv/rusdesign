@@ -67,11 +67,21 @@ p {
 a {
 	text-decoration: none;
 	color: #fff;
-	text-shadow: 1px 1px transparent;
+	text-shadow: 1px 1px var(--color-dark);
 	transition: .2s;
 
 	&:hover {
-		text-shadow: 1px 1px var(--color-dark);		
+		text-shadow: 1px 2px 9px var(--color-dark);	
+	}
+}
+
+h1 {
+	font-size: 44px;
+	line-height: 120%;
+	text-shadow: 2px 2px #111;
+
+	@media (max-width: 420px) {
+		font-size: 40px;
 	}
 }
 
