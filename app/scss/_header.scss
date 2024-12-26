@@ -1,8 +1,10 @@
 .header {
 
 	height: 650px;
-	background: url('../images/dest/promo.jpg') no-repeat;
-	
+	background-image: url('../images/dest/promo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	.navbar {
 		
 		position: relative;
