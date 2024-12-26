@@ -68,6 +68,70 @@
 				flex-wrap: nowrap;
 			}
 
-		}
+		} // advantages-list
+
+		&-item {
+			border: 2px solid transparent;
+			border-radius: 15px;
+			transition: .2s;
+			overflow: hidden;
+			position: relative;
+			flex: 1 0 220px;
+			max-width: 220px;
+
+			img {
+				display: block;
+			    width: 100%;
+			    height: auto;
+			    object-fit: cover;
+			}
+
+			&__title {
+				width: 204px;
+				height: 38px;
+				border: 1px solid #fff;
+				border-radius: 24px;
+				position: absolute;
+				bottom: 15px;
+				left: 7px;
+				font-size: 9px;
+				font-weight: 700;
+				text-transform: uppercase;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				padding: 5px 15px 3px 12px;
+
+				span {
+					font-size: 13px;
+					text-transform: none;
+					display: block;
+					width: 100%;
+					text-align: center;
+					padding-right: 15px;
+				}
+
+				&::after {
+					display: block;
+					content: '';
+					width: 56px;
+					height: 56px;
+					position: absolute;
+					top: -8px;
+					right: -13px;
+					background: url('../images/dest/icons/button.png') no-repeat;
+				}
+			} // title
+
+			&:hover {
+				border-color: var(--color-gold);
+
+				.advantages-item__title {
+					transition: .2s;
+					border-color: var(--color-gold);
+				}
+			}
+
+		} // advantages-item
 	}
 }
