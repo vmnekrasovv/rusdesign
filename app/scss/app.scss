@@ -78,8 +78,8 @@ body.lock {
 .section {
 	padding: 100px 0;
 
-	@media (max-width: 576px) {
-		padding-top: 50px;
+	@media (max-width: 1500px) {
+		padding: 50px 0;
 	}
 }
 
@@ -158,10 +158,12 @@ h1 {
 	}
 }
 
-@import 'header';
+@import '../libs/slick/slick.css';
 
+@import 'header';
 @import 'burger';
 
 @import 's1';
+@import 's2';
 
 // @import 'footer';

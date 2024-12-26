@@ -1,0 +1,24 @@
+.s2 {
+
+	&-slider {
+
+		margin-bottom: 20px;
+
+		.slick-slide {
+			// padding: 0 10px;
+			margin: 0 10px;
+			cursor: pointer;
+			border-radius: 20px;
+			width: 400px!important;
+			height: 280px!important;
+			object-fit: cover;
+
+			@media (max-width: 420px) {
+				width: 100vw!important;
+				height: 250px!important;
+				margin: 0;
+			}
+		}
+
+	}
+}
